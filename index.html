@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>registration form</title>
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href= "http://www.w3.org/2000/svg" fill="none" fill-rule="evenodd" circle fill="#FF7979" cx="12" cy="12" r="12"rect fill="#FFF" x="11" y="6" width="2" height="9" rx="1" rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1"/>
+  </head>
+  <body>
+    <main>
+      <div class="content">
+        <div class="text">
+          <h2>Learn to code by watching others</h2>
+          <p >See how experienced developers solve problems in real-time.</p>
+          <p>
+            watching scripted tutorials is great, but understanding how
+            developers think is inavluable.
+          </p>
+        </div>
+
+        <div class="rightcontent">
+          <div>
+            <h5 class="heading">Try it free 7 days then $20/mo. thereafter</h5>
+          </div>
+          <div class="form">
+            <form action="">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="fname"
+                required
+                class="textbox"
+              />
+              <div class="error" data-error="First Name cannot be empty"></div>
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lname"
+                required
+                class="textbox"
+              />
+              <div class="error" data-error="Last Name cannot be empty"></div>
+              <input
+                type="email"
+                placeholder="E-mail Address"
+                name="email"
+                required
+                class="textbox"
+              />
+              <div class="error" data-error="looks like this is not an E-mail"></div>
+              <input
+                type="text"
+                placeholder="First Name"
+                name="fname"
+                class="textbox"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+              />
+              <div class="error" data-error="First Name cannot be empty"></div>
+              <input
+                type="password"
+                placeholder="password"
+                required
+                name="pwd"
+                minlength="8"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                required
+                class="textbox"
+              />
+              <div class="error" data-error="looks like this is not an E-mail"></div>
+              <div>
+              <button id="btn">CLAIM YOUR FREE TRIAL</button>
+           
+            <div>
+            <p class ="link" > By clicking the button you are agreeing to our <a  href="#" class="link 1" >Terms and services</a> </p>
+        </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
